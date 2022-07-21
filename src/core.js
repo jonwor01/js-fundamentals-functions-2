@@ -1,4 +1,8 @@
 // 1. Create a function named bakingTime that returns 50
+ function bakingTime() {
+    
+    return 50
+}
 
 
 
@@ -7,6 +11,18 @@
 //
 // It must return how many minutes your cake has left based on your parameter
 // and the result of the bakingTime function
+function remainingBakeTime(numberOfMinutesInOven) {
+
+    let numberOfMinutes = bakingTime()
+    let numberOfMinutesLeft = numberOfMinutes - numberOfMinutesInOven
+
+
+    return numberOfMinutesLeft 
+
+
+    
+    
+}
 
 
 
@@ -16,6 +32,11 @@
 // It must return how many minutes it will take to prepare your cake, based on
 // each layer taking 3 minutes to prepare
 
+function calculatePreparationTime(numberOfLayers) {
+
+    return numberOfLayers * 3
+    
+}
 
 
 // 4. Create a function named totalTimeSpent that accepts two parameters:
@@ -25,7 +46,14 @@
 // which is the sum of the preparation time and the number of minutes it's been in the oven.
 // Use your calculatePreparationTime function in the calculation.
 
+function totalTimeSpent(numberOfLayers,numberOfMinutesInOven) {
 
+    let preparationTime = 3
+    let TotalNumberOfMinutes = (numberOfLayers * preparationTime) + numberOfMinutesInOven
+
+    return TotalNumberOfMinutes 
+    
+}
 
 
 // Don't change the code below this line
